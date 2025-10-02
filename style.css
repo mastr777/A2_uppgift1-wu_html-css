@@ -11,11 +11,29 @@ body {
     /* rgb(0, 242, 255) */
     font-size: large;
     line-height: 30px;
-    background-color: snow;
+    background-color: rgb(250, 153, 153);
 }
+
+h1#biggerHone {
+    font-size: 72px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    color: black;
+}
+
 
 h1 {
     font-size: x-large;
+}
+
+#box {
+    margin: auto;
+    height: 285px;
+    width: 675px;
+    background-color: white;
+    padding: 0;
 }
 
 
