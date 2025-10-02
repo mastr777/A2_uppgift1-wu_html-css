@@ -1,0 +1,151 @@
+/* 
+-------------------------------------
+style sheet for ToDo list
+-------------------------------------
+ */
+
+
+body {
+    font-family: monospace, 'Courier New', Courier;
+    color:rgb(248, 226, 201);
+    /* rgb(0, 242, 255) */
+    font-size: large;
+    line-height: 30px;
+    background-color: snow;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+
+#layoutSwitch {
+    position: absolute;
+    right: 27%;
+    top: 22px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color: rgb(26, 26, 26);
+    color: snow;
+    letter-spacing: 1px;
+}
+
+#layoutSwitch2 {
+    position: absolute;
+    right: 27%;
+    top: 50px;
+    min-width: 50px;
+    font-size:xx-small;
+    background-color:snow;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+main {
+    width: 50%;
+    min-height: 540px;
+    max-height: 100%;
+    background-color: #948d7f;
+    padding-top: 6px;
+    padding-bottom: 30px;
+    margin-left: 25%;
+    border-radius: 7px;
+}
+
+#completedTasks {
+    font-size: small;
+}
+
+
+/* div styling ---------------------------------------------------- */
+.divFixedHeight {
+    height: 64px;
+}
+
+div {
+    padding-left: 60px;
+}
+
+div#divCounter {
+    color: rgb(255, 255, 255);
+    height: 40px;
+    padding-left: 40px;
+    background-color: rgb(29, 40, 49);
+    padding-left: 72px;
+}
+
+
+/* list default to marked 'Done' ----------------------------------- */
+li {
+    list-style-type: none;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border-bottom: dotted rgb(74, 95, 104) 2px;
+    margin-bottom: 7px;
+}
+
+span.listText {
+    display:inline-block;
+    width: 70%;
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+.completed {
+    display:inline-block;
+    width: 70%;
+    text-decoration: line-through;
+    color: rgb(206, 117, 136);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+#taskListFrame {
+    min-height: 300px;
+    max-height: 100%;
+    background-color: rgb(29, 40, 49);
+    padding-left: 64px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#theButton {
+    background-color: rgb(79, 231, 160);
+    border-radius: 4px;
+    border-color: skyblue;
+}
+
+#theButton:hover { 
+    background-color: rgb(20, 255, 146);
+}
+
+
+/* various styling ------------------------------------------------- */
+.infoTextColor {
+    color: rgb(241, 240, 133);
+}
+
+.inputPadd {
+    margin-top: 6px;
+}
+
+span.trashcan {
+    display:inline-block;
+    width: 40px;
+    position: right;
+    text-align: right;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    width: 70%;
+}
+
+#textInput {
+    border-color: skyblue;
+    border-radius: 4px;
+}
