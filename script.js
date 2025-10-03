@@ -37,21 +37,22 @@ completedTasks.textContent = completed + ' completed';
 // add text from Input to a list
 function addToList() {
 
-    infoText.textContent = '';
+        infoText.textContent = '';
+        todoText = textInput.value;
 
-    todoText = textInput.value;
+        // if there are no letters or symbols, do this
+        if (todoText.length == 0) {
 
-    if (todoText.length == 0) {
+            infoText.classList.add('blinking');
+            infoText.textContent = 'Input must not be empty';
+            return;
+        }
 
-        infoText.textContent = 'Input must not be empty';
-        return;
-    }
-
-
-        // adding input into an Array
-            /* let text = textInput.value; */
-        const todoObject = {name: todoText, completed: false};
-        todoArray.push(todoObject); /* text */
+        
+    // adding input into an Array
+        /* let text = textInput.value; */
+    const todoObject = {name: todoText, completed: false};
+    todoArray.push(todoObject); /* text */
 
 
     // creating li and span within elements
