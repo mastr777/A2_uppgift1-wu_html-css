@@ -13,11 +13,12 @@ body {
 }
 
 h1#biggerHone {
+    display: inline-block;
     font-size: 64px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 0;
     color: black;
 }
 
@@ -25,6 +26,7 @@ h1#biggerHone {
 
 #box {
     margin: auto;
+    text-align: center;
     min-height: 280px;
     max-height: 100%;
     width: 640px;
@@ -32,9 +34,21 @@ h1#biggerHone {
     padding: 0;
     padding-bottom: 20px;
     box-shadow: 0 0 20px 5px rgba(100, 100, 100 , .2), 0 0 20px 5px rgba(100, 100, 100 , .2);
+    position: relative;
+    animation: mainBox .5s linear;
 }
 
-main {
+@keyframes mainBox {
+        0% { top: -400px; opacity: 0 }
+        25% { top: -150px; opacity: .2 }
+        50% { top: 70px; opacity: .4 }
+        75% { top: 50px; opacity: .7 }
+        100% { top: 0px }
+    }
+
+/* .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}} */
+
+/* main {
     width: 50%;
     min-height: 540px;
     max-height: 100%;
@@ -43,7 +57,7 @@ main {
     padding-bottom: 30px;
     margin: auto;
     border-radius: 7px;
-}
+} */
 
 #completedTasks {
     font-size: 20px;
@@ -109,6 +123,7 @@ li {
         75% { top: 10px }
         100% { top: 0px }
     }
+
 
 span.listText {
     text-align: center;
