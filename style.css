@@ -6,11 +6,10 @@ style sheet for ToDo list
 
 
 body {
-    font-family: monospace, 'Courier New', Courier;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:rgb(248, 226, 201);
-    /* rgb(0, 242, 255) */
     font-size: large;
-    line-height: 30px;
+    line-height: 20px;
     background-color: rgb(250, 153, 153);
 }
 
@@ -30,10 +29,12 @@ h1 {
 
 #box {
     margin: auto;
-    height: 285px;
-    width: 675px;
+    min-height: 280px;
+    max-height: 100%;
+    width: 660px;
     background-color: white;
     padding: 0;
+    shadow: 20px;
 }
 
 
@@ -71,7 +72,8 @@ main {
 }
 
 #completedTasks {
-    font-size: small;
+    font-size: 18px;
+    color: black;
 }
 
 
@@ -81,34 +83,28 @@ main {
 }
 
 div {
-    padding-left: 60px;
+    text-align: center;
 }
 
 div#divCounter {
-    color: rgb(255, 255, 255);
-    height: 40px;
-    padding-left: 40px;
-    background-color: rgb(29, 40, 49);
-    padding-left: 72px;
+    height: 60px;
+/*     background-color: rgb(29, 40, 49); */
 }
 
 
 /* list default to marked 'Done' ----------------------------------- */
 li {
     list-style-type: none;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    border-bottom: dotted rgb(74, 95, 104) 2px;
-    margin-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 span.listText {
-    display:inline-block;
-    width: 70%;
-    color: rgb(255, 255, 255);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    font-style: italic;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
 }
 
 .completed {
@@ -130,14 +126,12 @@ span.listText {
     padding-bottom: 20px;
 }
 
-#theButton {
-    background-color: rgb(79, 231, 160);
-    border-radius: 4px;
-    border-color: skyblue;
-}
-
-#theButton:hover { 
-    background-color: rgb(20, 255, 146);
+#theButton {  /* :hover */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 3px 14px 7px 14px;
 }
 
 
@@ -159,11 +153,14 @@ span.trashcan {
 
 ul {
     padding: 0;
-    margin: 0;
-    width: 70%;
+    margin: auto;
 }
 
 #textInput {
-    border-color: skyblue;
+    /* border-color: skyblue; */
     border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
 }
