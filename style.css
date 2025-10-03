@@ -31,6 +31,7 @@ h1#biggerHone {
     background-color: white;
     padding: 0;
     padding-bottom: 20px;
+    box-shadow: 0 0 20px 5px rgba(100, 100, 100 , .2), 0 0 20px 5px rgba(100, 100, 100 , .2);
 }
 
 main {
@@ -50,6 +51,30 @@ main {
     font-weight: 500;
 }
 
+/* info text animated, if clicking on OK - and no characters are typed into textfield */
+
+.blinking {
+    color: rgb(224, 84, 84);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    height: 30px;
+    animation: blinkblink 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes blinkblink {
+        0% { color: rgb(224, 84, 84); }
+        25% { color: white; }
+        50% { color: rgb(224, 84, 84); }
+        75% { color: white; }
+        100% { color: rgb(224, 84, 84); }
+    }
+
+div#infoTextDiv {
+    height: 20px;
+    padding: 7px;
+}
 
 /* div styling ---------------------------------------------------- */
 .divFixedHeight {
@@ -67,11 +92,23 @@ div#divCounter {
 
 
 /* list default to marked 'Done' ----------------------------------- */
+
+/* animated text when task added */
 li {
     list-style-type: none;
     padding-top: 14px;
     padding-bottom: 14px;
+    position: relative;
+    animation: textToListBounce 0.5s linear;
 }
+
+@keyframes textToListBounce {
+        0% { top: 0px }
+        25% { top: 10px }
+        50% { top: 20px }
+        75% { top: 10px }
+        100% { top: 0px }
+    }
 
 span.listText {
     text-align: center;
@@ -81,8 +118,6 @@ span.listText {
 }
 
 .completed {
-/*     display:inline-block;
-    width: 70%; */
     text-decoration: line-through;
     color: rgb(110, 110, 110);
     font-size: 30px;
@@ -97,7 +132,7 @@ span.listText {
     padding-bottom: 0px;
 }
 
-#theButton {  /* :hover */
+#theButton {
     font-size: 26px;
     font-weight: 500;
     border-radius: 5px;
@@ -107,19 +142,6 @@ span.listText {
 
 
 /* various styling ------------------------------------------------- */
-.infoTextColor {
-    color: rgb(224, 84, 84);
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 600;
-    height: 30px;
-}
-
-div#infoTextDiv {
-    height: 20px;
-    padding: 7px;
-}
-
 
 span.trashcan {
     display: inline-block;
