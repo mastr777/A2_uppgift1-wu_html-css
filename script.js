@@ -43,7 +43,7 @@ function addToList() {
 
     if (todoText.length == 0) {
 
-        infoText.textContent = ' _please, type a task !';
+        infoText.textContent = 'Input must not be empty';
         return;
     }
 
@@ -65,7 +65,7 @@ function addToList() {
 
         // trashcan code for an appearing span element
     const trashcan = document.createElement('span');
-    trashcan.innerHTML = '&#x1F5D1';
+    trashcan.innerHTML = '&#x1f5d1';
     trashcan.classList.add('trashcan'); /* setAttribute('class',  */
 
     trashcan.addEventListener('click', function() {
