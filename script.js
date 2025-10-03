@@ -31,7 +31,7 @@ function changeStatus(todoText, completedStatus){
 
 }
 
-completedTasks.textContent = completed + ' completed Tasks';
+completedTasks.textContent = completed + ' completed';
 
 // function start, when clicked button --------------------------------------------------------------
 // add text from Input to a list
@@ -74,7 +74,7 @@ function addToList() {
 
                 itemText.setAttribute('class', 'listText');
                 completed--;
-                completedTasks.textContent = completed + ' completed Tasks';
+                completedTasks.textContent = completed + ' completed';
                 item.remove();
                 let removeText = item.firstChild.textContent;
                 let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
@@ -87,7 +87,7 @@ function addToList() {
             let removeText = item.firstChild.textContent;
             let indexToRemove = todoArray.map(t => t.name).indexOf(removeText);
             todoArray.splice(indexToRemove, 1);
-            completedTasks.textContent = completed + ' completed Tasks';
+            completedTasks.textContent = completed + ' completed';
 
             }
     });
@@ -101,7 +101,7 @@ function addToList() {
 
                 itemText.setAttribute('class', 'listText');
                 completed--;
-                completedTasks.textContent = completed + ' completed Tasks';
+                completedTasks.textContent = completed + ' completed';
                 changeStatus(itemText.innerText, false);
 
             }
@@ -109,7 +109,7 @@ function addToList() {
 
                 itemText.setAttribute('class', 'completed');
                 completed++;
-                completedTasks.textContent = completed + ' completed Tasks';
+                completedTasks.textContent = completed + ' completed';
                 changeStatus(itemText.innerText, true);
 
             }
