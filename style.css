@@ -1,6 +1,6 @@
 /* 
 -------------------------------------
-style sheet for ToDo list
+style sheet for ToDo Lookalike list
 -------------------------------------
  */
 
@@ -43,7 +43,7 @@ h1#biggerHone {
     width: 640px;
     background-color: white;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     box-shadow: 0 0 20px 5px rgba(100, 100, 100 , .2), 0 0 20px 5px rgba(100, 100, 100 , .2);
     position: relative;
     animation: mainBox .5s linear;
@@ -59,16 +59,6 @@ h1#biggerHone {
 
 /* .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}} */
 
-/* main {
-    width: 50%;
-    min-height: 540px;
-    max-height: 100%;
-    background-color: #948d7f;
-    padding-top: 6px;
-    padding-bottom: 30px;
-    margin: auto;
-    border-radius: 7px;
-} */
 
 #completedTasks {
     font-size: 20px;
@@ -84,6 +74,7 @@ h1#biggerHone {
         75% { opacity: .7 }
         100% { color: black; opacity: 1 }
     }
+
 
 /* info text animated, if clicking on OK - and no characters are typed into textfield */
 
@@ -110,7 +101,9 @@ div#infoTextDiv {
     padding: 7px;
 }
 
+
 /* div styling ---------------------------------------------------- */
+
 .divFixedHeight {
     height: 64px;
     animation: fadeTextfield 3.5s linear;
@@ -133,22 +126,22 @@ div#divCounter {
 }
 
 
-/* list default to marked 'Done' ----------------------------------- */
+/* list default to marked 'Completed' ----------------------------------- */
 
-/* animated text when task added */
+/* animated bouncing text when task added */
 li {
     list-style-type: none;
     padding-top: 14px;
     padding-bottom: 14px;
     position: relative;
-    animation: textToListBounce 0.5s linear;
+    animation: textToListBounce 0.2s linear;
 }
 
 @keyframes textToListBounce {
         0% { top: 0px }
-        25% { top: 10px }
-        50% { top: 20px }
-        75% { top: 10px }
+        25% { top: 9px }
+        50% { top: 19px }
+        75% { top: 9px }
         100% { top: 0px }
     }
 
@@ -167,18 +160,11 @@ span.listText {
     cursor: pointer; 
 }
 
-#taskListFrame {
-    min-height: 300px;
-    max-height: 100%;
-    background-color: rgb(29, 40, 49);
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
 #theButton {
     font-size: 26px;
     font-weight: 500;
     border-radius: 5px;
+    border-width: 2px;
     padding: 0px 14px 0px 14px;
     height: 44px;
 }
@@ -187,7 +173,7 @@ span.listText {
 /* various styling ------------------------------------------------- */
 
 span.trashcan {
-    display: inline-block;
+    display: inline-block; /* in a block, for individual tweaks */
     width: 40px;
     position: right;
     text-align: right;
@@ -209,8 +195,8 @@ ul {
 }
 
 #textInput {
-    /* border-color: skyblue; */
     border-radius: 4px;
+    border-width: 2px;
     width: 280px;
     font-size: 30px;
     margin-right: 5px;
