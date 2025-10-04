@@ -1,5 +1,5 @@
 /* 
-ToDo List js
+ToDo List - Lookalike js
  */
 
 
