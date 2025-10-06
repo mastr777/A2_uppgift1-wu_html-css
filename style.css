@@ -155,9 +155,10 @@ span.listText {
 
 .completed {
     text-decoration: line-through;
-    color: rgb(110, 110, 110);
+    color: rgb(92, 92, 92);
     font-size: 30px;
-    cursor: pointer; 
+    cursor: pointer;
+    transition: 0.2s ease-out;
 }
 
 #theButton {
@@ -187,7 +188,7 @@ span.trashcan {
 
 .trashcan:hover { 
     color: rgb(36, 36, 36);
-    transition: 0.3s;    
+    transition: 0.2s ease-in;  
 }
 
 ul {
