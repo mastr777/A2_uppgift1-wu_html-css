@@ -11,6 +11,7 @@ body {
     line-height: 20px;
     background-image: linear-gradient(to top, #ff7a7a, #fdc5c5);
     background-size: 100vw 100vh;
+    margin-top: 14px;
 }
 
 h1#biggerHone {
