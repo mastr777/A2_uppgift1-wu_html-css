@@ -23,14 +23,13 @@ h1#biggerHone {
     padding-top: 0;
     color: black;
     margin: 44px;
-    animation: fadeHone 1.2s linear;
+    animation: fadeHone 1.3s linear;
 }
 
 @keyframes fadeHone {
         0% { opacity: 0 }
-        25% { opacity: 0 }
         50% { opacity: 0 }
-        75% { opacity: 1 }
+        70% { opacity: 1 }
         100% { color: black; opacity: 1 }
     }
 
@@ -65,12 +64,11 @@ h1#biggerHone {
     font-size: 20px;
     color: black;
     font-weight: 500;
-    animation: fadeCompleted 1.4s linear;
+    animation: fadeCompleted 1.5s linear;
 }
 
 @keyframes fadeCompleted {
         0% { opacity: 0 }
-        25% { opacity: 0 }
         50% { opacity: 0 }
         75% { opacity: 1 }
         100% { color: black; opacity: 1 }
@@ -108,12 +106,11 @@ div#infoTextDiv {
 
 .divFixedHeight {
     height: 64px;
-    animation: fadeTextfield 1.6s linear;
+    animation: fadeTextfield 1.7s linear;
 }
 
 @keyframes fadeTextfield {
         0% { opacity: 0 }
-        25% { opacity: 0 }
         50% { opacity: 0 }
         75% { opacity: 1}
         100% { color: black; opacity: 1 }
