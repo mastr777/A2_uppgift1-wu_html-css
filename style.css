@@ -29,13 +29,13 @@ body {
     padding-bottom: 10px;
     box-shadow: 0 0 20px 5px rgba(100, 100, 100, .2), 0 0 20px 5px rgba(100, 100, 100, .2);
     position: relative;
-    animation-name: mainBox;
+    animation-name: mainBoxAnima;
     animation-duration: .6s;
     animation-delay: 0;
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-@keyframes mainBox {
+@keyframes mainBoxAnima {
     0% {
         transform: translateY(-400px);
     }
@@ -58,10 +58,10 @@ h1#biggerHone {
     padding-top: 0;
     color: black;
     margin: 44px;
-    animation: fadeHone 1.2s linear;
+    animation: fadeHoneAnima 1.2s linear;
 }
 
-@keyframes fadeHone {
+@keyframes fadeHoneAnima {
     0% {
         opacity: 0
     }
@@ -81,7 +81,7 @@ h1#biggerHone {
     font-size: 20px;
     color: black;
     font-weight: 500;
-    animation: fadeCompleted 1.5s linear;
+    animation: fadeCompletedAnima 1.5s linear;
 }
 
 @keyframes fadeCompleted {
@@ -101,7 +101,7 @@ h1#biggerHone {
 
 .divFixedHeight {
     height: 64px;
-    animation: fadeTextfield 1.7s linear;
+    animation: fadeTextfieldAnima 1.7s linear;
 }
 
 @keyframes fadeTextfield {
@@ -134,11 +134,11 @@ div#infoTextDiv {
     font-style: italic;
     font-weight: 600;
     height: 30px;
-    animation: blinkblink 1s;
+    animation: blinkblinkAnima 1s;
     animation-timing-function: linear;
 }
 
-@keyframes blinkblink {
+@keyframes blinkblinkAnima {
     0% {
         color: rgb(224, 84, 84);
     }
@@ -180,10 +180,10 @@ li {
     padding-top: 17px;
     padding-bottom: 20px;
     position: relative;
-    animation: textToListBounce 0.2s linear;
+    animation: textToListBounceAnima 0.2s linear;
 }
 
-@keyframes textToListBounce {
+@keyframes textToListBounceAnima {
     0% {
         transform: translateY(0px);
         opacity: 0
