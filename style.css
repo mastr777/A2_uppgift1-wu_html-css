@@ -84,7 +84,7 @@ h1#biggerHone {
     animation: fadeCompletedAnima 1.5s linear;
 }
 
-@keyframes fadeCompleted {
+@keyframes fadeCompletedAnima {
     0% {
         opacity: 0
     }
@@ -104,7 +104,7 @@ h1#biggerHone {
     animation: fadeTextfieldAnima 1.7s linear;
 }
 
-@keyframes fadeTextfield {
+@keyframes fadeTextfieldAnima {
     0% {
         opacity: 0
     }
