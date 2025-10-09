@@ -49,13 +49,14 @@ h1#biggerHone {
     position: relative;
     animation-name: mainBox;
     animation-duration: .6s;
+    animation-delay: 0;
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 @keyframes mainBox {
-        0% { top: -400px; opacity: 0 }
-        50% { top: 100px; opacity: 0 }
-        100% { top: 0px; opacity: 1 }
+    0% { transform: translateY(-400px); }
+    50% { transform: translateY(110px); }
+    100% { transform: translateY(0px); }
     }
 
 
