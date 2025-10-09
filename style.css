@@ -15,7 +15,7 @@ body {
 }
 
 
-/* animation foundation code here */
+ /* ---------------------------------------------------------------------------------------- */
 
 #box {
     margin: auto;
@@ -40,7 +40,7 @@ body {
     50% { transform: translateY(110px); }
     100% { transform: translateY(0px); }
     }
-    
+
 
 h1#biggerHone {
     display: inline-block;
@@ -86,7 +86,7 @@ h1#biggerHone {
     }
 
 
-/* info text animated, if clicking on OK - and no characters are typed into textfield */
+ /* ---------------------------------------------------------------------------------------- */
 
 div#infoTextDiv {
     height: 20px;
@@ -113,7 +113,7 @@ div#infoTextDiv {
     }
 
 
-/* div styling ---------------------------------------------------- */
+ /* ---------------------------------------------------------------------------------------- */
 
 div {
     text-align: center;
@@ -125,9 +125,9 @@ div {
 }
 
 
-/* list default to marked 'Completed' ----------------------------------- */
 
-/* animated bouncing text when task added */
+ /* ---------------------------------------------------------------------------------------- */
+
 li {
     list-style-type: none;
     padding-top: 17px;
@@ -170,10 +170,10 @@ span.listText {
 }
 
 
-/* various styling ------------------------------------------------- */
+ /* ---------------------------------------------------------------------------------------- */
 
 span.trashcan {
-    display: inline-block; /* in a block, for individual tweaks */
+    display: inline-block;
     width: 40px;
     position: right;
     text-align: right;
