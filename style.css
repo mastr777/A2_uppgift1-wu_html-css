@@ -63,16 +63,16 @@ h1#biggerHone {
 
 @keyframes fadeHoneAnima {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     50% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
         color: black;
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -86,16 +86,16 @@ h1#biggerHone {
 
 @keyframes fadeCompletedAnima {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     50% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
         color: black;
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -106,16 +106,16 @@ h1#biggerHone {
 
 @keyframes fadeTextfieldAnima {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     50% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
         color: black;
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -259,10 +259,15 @@ ul {
 }
 
 #textInput {
+    border-inline: 1px solid black;
     border-radius: 4px;
-    border-width: 1px;
     width: 280px;
     font-size: 30px;
     margin-right: 5px;
     padding: 0;
+}
+
+input:focus {
+    border-color: blue;
+    border-width: 1px;
 }
