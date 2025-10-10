@@ -132,7 +132,7 @@ div#infoTextDiv {
     font-size: 18px;
     line-height: 30px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     height: 30px;
     animation: blinkblinkAnima 1s;
     animation-timing-function: linear;
