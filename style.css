@@ -20,9 +20,9 @@ body {
 #box {
     margin: auto;
     text-align: center;
-    min-height: 260px;
+    min-height: 270px;
     max-height: 100%;
-    width: 630px;
+    width: 670px;
     background-color: white;
     opacity: 1;
     padding: 0;
@@ -33,6 +33,10 @@ body {
     animation-duration: .6s;
     animation-delay: 0;
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+main {
+    height: 100%;
 }
 
 @keyframes mainBoxAnima {
@@ -123,17 +127,16 @@ h1#biggerHone {
 /* ---------------------------------------------------------------------------------------- */
 
 div#infoTextDiv {
-    height: 20px;
-    padding: 7px;
+    height: 40px;
+    padding: 7px 0 7px 0px;
 }
 
 .blinking {
     color: rgb(224, 84, 84);
     font-size: 18px;
-    line-height: 30px;
+    line-height: 34px;
     font-style: italic;
     font-weight: 500;
-    height: 30px;
     animation: blinkblinkAnima 1s;
     animation-timing-function: linear;
 }
@@ -218,7 +221,7 @@ span.listText {
 
 .completed {
     text-decoration: line-through;
-    color: rgb(92, 92, 92);
+    color: rgb(107, 107, 107);
     font-size: 30px;
     cursor: pointer;
     transition: 0.2s ease-out;
@@ -229,8 +232,8 @@ span.listText {
     font-weight: 500;
     border-radius: 5px;
     border-width: 2px;
-    padding: 0px 14px 0px 14px;
-    height: 44px;
+    padding: 4px 18px 7px 18px;
+    height: 48px;
 }
 
 
@@ -259,15 +262,15 @@ ul {
 }
 
 #textInput {
-    border-inline: 1px solid black;
+    border: 2px solid black;
     border-radius: 4px;
-    width: 280px;
-    font-size: 30px;
+    width: 300px;
+    font-size: 28px;
     margin-right: 5px;
-    padding: 0;
+    padding: 3px 0 6px 6px;
 }
 
-input:focus {
-    border-color: blue;
-    border-width: 1px;
+input#textInput:focus {
+    border: 2px solid blue;
+    outline: none;
 }
