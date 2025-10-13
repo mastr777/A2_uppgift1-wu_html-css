@@ -48,6 +48,7 @@ function addToList() {
             return;
         }
 
+        infoText.textContent = '';
         
         // adding input into an Array
     const todoObject = {name: todoText, completed: false};
