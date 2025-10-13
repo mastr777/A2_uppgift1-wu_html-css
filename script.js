@@ -20,7 +20,7 @@ let completed = 0;
 theButton.addEventListener('click', addToList);
 
 
-// an Array conected to the li input
+// array connected to the li inputs
 const todoArray = [];
 
 function changeStatus(todoText, completedStatus){
@@ -40,7 +40,7 @@ function addToList() {
         infoText.textContent = '';
         todoText = textInput.value;
 
-        // if there are no letters or symbols, do this
+        // if there are no letters or symbols (OK pressed), return this
         if (todoText.length == 0) {
 
             infoText.classList.add('blinking');
@@ -49,13 +49,12 @@ function addToList() {
         }
 
         
-    // adding input into an Array
-        /* let text = textInput.value; */
+        // adding input into an Array
     const todoObject = {name: todoText, completed: false};
-    todoArray.push(todoObject); /* text */
+    todoArray.push(todoObject);
 
 
-    // creating li and span within elements
+        // creating li and span within elements
     const item = document.createElement('li');
     todoList.appendChild(item);
 
@@ -67,7 +66,7 @@ function addToList() {
         // trashcan code for an appearing span element
     const trashcan = document.createElement('span');
     trashcan.innerHTML = '&#x1f5d1';
-    trashcan.classList.add('trashcan'); /* setAttribute('class',  */
+    trashcan.classList.add('trashcan');
 
     trashcan.addEventListener('click', function() {
 
